@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio - Fotografia Profissional</title>
+    <meta name="description" content="Fotografia profissional especializada em retratos, casamentos e eventos corporativos">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container">
+            <h1 class="logo">Studio</h1>
+            <div class="nav-links">
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">Sobre</a>
+                <a href="#services">Serviços</a>
+                <button class="btn-contact" onclick="scrollToSection('contact')">Contato</button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#portfolio" onclick="closeMobileMenu()">Portfolio</a>
+            <a href="#about" onclick="closeMobileMenu()">Sobre</a>
+            <a href="#services" onclick="closeMobileMenu()">Serviços</a>
+            <button class="btn-contact" onclick="scrollToSection('contact'); closeMobileMenu()">Contato</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Capturando<br><span class="accent">Momentos Únicos</span></h1>
+            <p>Fotografia profissional que conta histórias através de cada imagem</p>
+            <button class="btn-primary" onclick="scrollToSection('contact')">Agende sua Sessão</button>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Portfolio</h2>
+                <p>Uma seleção dos meus trabalhos mais recentes</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item tall">
+                    <img src="/src/assets/gallery-1.jpg" alt="Retrato profissional">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-item wide">
+                    <img src="/src/assets/gallery-2.jpg" alt="Fotografia de casamento">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/src/assets/gallery-3.jpg" alt="Fotografia editorial">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-item tall">
+                    <img src="/src/assets/gallery-4.jpg" alt="Fotografia corporativa">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-item wide">
+                    <img src="/src/assets/gallery-5.jpg" alt="Fotografia lifestyle">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/src/assets/gallery-6.jpg" alt="Retrato artístico">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Sobre Mim</h2>
+                    <p>Com mais de 10 anos de experiência em fotografia profissional, dedico-me a capturar momentos autênticos e emocionantes que contam histórias únicas.</p>
+                    <p>Especializado em retratos, casamentos e fotografia corporativa, trabalho com dedicação para criar imagens que vão além do convencional, buscando sempre a perfeição técnica e emocional.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Sessões Realizadas</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">300+</div>
+                            <div class="stat-label">Clientes Satisfeitos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Anos de Experiência</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Serviços</h2>
+                <p>Soluções fotográficas personalizadas para cada necessidade</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📷</div>
+                    <h3>Retratos</h3>
+                    <p>Sessões fotográficas individuais e familiares com foco em capturar personalidade e emoção.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">❤️</div>
+                    <h3>Casamentos</h3>
+                    <p>Cobertura completa do seu grande dia, preservando cada momento especial para sempre.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Corporativo</h3>
+                    <p>Fotografia profissional para empresas, headshots executivos e eventos corporativos.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>Eventos</h3>
+                    <p>Registro de eventos sociais e profissionais com qualidade e discrição.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Vamos conversar sobre o seu próximo projeto fotográfico</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div>
+                            <div class="info-title">Email</div>
+                            <div class="info-text">contato@studiofoto.com</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <div>
+                            <div class="info-title">Telefone</div>
+                            <div class="info-text">+55 (11) 99999-9999</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <div class="info-title">Localização</div>
+                            <div class="info-text">São Paulo, Brasil</div>
+                        </div>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <input type="text" name="name" placeholder="Seu Nome" required>
+                    <input type="email" name="email" placeholder="Seu Email" required>
+                    <textarea name="message" placeholder="Sua Mensagem" rows="6" required></textarea>
+                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Studio</h3>
+                    <p>Fotografia profissional com paixão</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Email">✉️</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Studio. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
