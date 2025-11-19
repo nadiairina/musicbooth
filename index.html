@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Photos4U - Fotografia Profissional</title>
+    <title>Studio - Fotografia Profissional</title>
     <meta name="description" content="Fotografia profissional especializada em retratos, casamentos e eventos corporativos">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,12 +11,13 @@
     <!-- Navbar -->
     <nav id="navbar">
         <div class="container">
-            <h1 class="logo">Photos4You</h1>
+            <h1 class="logo">Studio</h1>
             <div class="nav-links">
                 <a href="#portfolio">Portfolio</a>
                 <a href="#about">Sobre</a>
                 <a href="#services">Serviços</a>
-                <button class="btn-contact" onclick="scrollToSection('contact')">Contactos</button>
+                <a href="#shop">Loja</a>
+                <button class="btn-contact" onclick="scrollToSection('contact')">Contato</button>
             </div>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <span></span>
@@ -28,7 +29,8 @@
             <a href="#portfolio" onclick="closeMobileMenu()">Portfolio</a>
             <a href="#about" onclick="closeMobileMenu()">Sobre</a>
             <a href="#services" onclick="closeMobileMenu()">Serviços</a>
-            <button class="btn-contact" onclick="scrollToSection('contact'); closeMobileMenu()">Contactos</button>
+            <a href="#shop" onclick="closeMobileMenu()">Loja</a>
+            <button class="btn-contact" onclick="scrollToSection('contact'); closeMobileMenu()">Contato</button>
         </div>
     </nav>
 
@@ -135,6 +137,131 @@
                     <div class="service-icon">👥</div>
                     <h3>Eventos</h3>
                     <p>Registro de eventos sociais e profissionais com qualidade e discrição.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop">
+        <div class="container">
+            <div class="section-header">
+                <h2>Loja Digital</h2>
+                <p>Presets, Packs e Wallpapers exclusivos para elevar sua fotografia</p>
+            </div>
+            <div class="shop-grid">
+                <!-- Product 1: Presets -->
+                <div class="product-card" data-product="preset-vintage">
+                    <div class="product-image">
+                        <img src="/src/assets/gallery-1.jpg" alt="Vintage Presets Pack">
+                        <div class="product-overlay">
+                            <button class="btn-view" onclick="viewProduct('preset-vintage')">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Preset</span>
+                        <h3>Vintage Film Presets</h3>
+                        <p>Pack com 15 presets estilo filme vintage</p>
+                        <div class="product-footer">
+                            <span class="product-price">€29,99</span>
+                            <button class="btn-add-cart" onclick="addToCart('preset-vintage')">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Presets -->
+                <div class="product-card" data-product="preset-moody">
+                    <div class="product-image">
+                        <img src="/src/assets/gallery-2.jpg" alt="Moody Presets Pack">
+                        <div class="product-overlay">
+                            <button class="btn-view" onclick="viewProduct('preset-moody')">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Preset</span>
+                        <h3>Moody Tones Presets</h3>
+                        <p>Pack com 20 presets para tons dramáticos</p>
+                        <div class="product-footer">
+                            <span class="product-price">€34,99</span>
+                            <button class="btn-add-cart" onclick="addToCart('preset-moody')">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Pack -->
+                <div class="product-card" data-product="pack-wedding">
+                    <div class="product-image">
+                        <img src="/src/assets/gallery-3.jpg" alt="Wedding Photography Pack">
+                        <div class="product-overlay">
+                            <button class="btn-view" onclick="viewProduct('pack-wedding')">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Pack Completo</span>
+                        <h3>Wedding Photography Pack</h3>
+                        <p>Presets + Guia completo de fotografia de casamento</p>
+                        <div class="product-footer">
+                            <span class="product-price">€79,99</span>
+                            <button class="btn-add-cart" onclick="addToCart('pack-wedding')">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Wallpapers -->
+                <div class="product-card" data-product="wallpaper-nature">
+                    <div class="product-image">
+                        <img src="/src/assets/gallery-4.jpg" alt="Nature Wallpapers Collection">
+                        <div class="product-overlay">
+                            <button class="btn-view" onclick="viewProduct('wallpaper-nature')">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Wallpapers</span>
+                        <h3>Nature Collection</h3>
+                        <p>50 wallpapers em alta resolução 4K</p>
+                        <div class="product-footer">
+                            <span class="product-price">€19,99</span>
+                            <button class="btn-add-cart" onclick="addToCart('wallpaper-nature')">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Wallpapers -->
+                <div class="product-card" data-product="wallpaper-urban">
+                    <div class="product-image">
+                        <img src="/src/assets/gallery-5.jpg" alt="Urban Wallpapers Collection">
+                        <div class="product-overlay">
+                            <button class="btn-view" onclick="viewProduct('wallpaper-urban')">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Wallpapers</span>
+                        <h3>Urban Landscapes</h3>
+                        <p>30 wallpapers de paisagens urbanas 4K</p>
+                        <div class="product-footer">
+                            <span class="product-price">€14,99</span>
+                            <button class="btn-add-cart" onclick="addToCart('wallpaper-urban')">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Pack -->
+                <div class="product-card" data-product="pack-complete">
+                    <div class="product-image">
+                        <img src="/src/assets/gallery-6.jpg" alt="Complete Photography Pack">
+                        <div class="product-overlay">
+                            <button class="btn-view" onclick="viewProduct('pack-complete')">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Pack Completo</span>
+                        <h3>Complete Collection</h3>
+                        <p>Todos os presets + 100 wallpapers + Guias</p>
+                        <div class="product-footer">
+                            <span class="product-price">€149,99</span>
+                            <button class="btn-add-cart" onclick="addToCart('pack-complete')">Adicionar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
