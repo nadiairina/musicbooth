@@ -65,11 +65,11 @@ const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Get form data (Adicionado 'event-type' e a variável de detalhes 'message' foi corrigida)
+    // Get form data
     const formData = new FormData(contactForm);
     const name = formData.get('name');
     const email = formData.get('email');
-    const eventType = formData.get('event-type'); // Novo campo
+    const eventType = formData.get('event-type'); // NOVO: Captura o tipo de evento
     const details = formData.get('message');
     
     // Show success toast
@@ -78,12 +78,11 @@ contactForm.addEventListener('submit', function(e) {
     // Reset form
     contactForm.reset();
     
-    // In a real application, you would send this data to a server
+    // Simulação do envio de dados
     console.log('Form submitted:', { name, email, eventType, details });
     
     // *******************************************************************
-    // SUGGESTÃO: Usar a Fetch API para enviar dados para um endpoint real
-    // Ex: fetch('https://seu-endpoint-de-formulário.com/submit', { ... })
+    // Sugestão: Usar a Fetch API para enviar dados para um endpoint real
     // *******************************************************************
 });
 
@@ -151,9 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
         hero.style.transform = 'translateY(0)';
     }
 
-    // **********************************************
     // NOVO: Atualiza o ano no footer dinamicamente
-    // **********************************************
     const currentYear = document.getElementById('currentYear');
     if (currentYear) {
         currentYear.textContent = new Date().getFullYear();
@@ -166,7 +163,9 @@ if ('IntersectionObserver' in window) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const img = entry.target;
-                img.src = img.dataset.src;
+                // Como já adicionamos loading="lazy" no HTML, esta parte pode ser opcionalmente removida,
+                // mas mantê-la como fallback não prejudica
+                // img.src = img.dataset.src; 
                 img.classList.remove('lazy');
                 imageObserver.unobserve(img);
             }
@@ -187,8 +186,6 @@ function addToCart(productId) {
         'sample-moody': { name: 'Deep Tech Sample Pack', price: 34.99, category: 'Samples' },
         'course-masterclass': { name: 'Masterclass: Mixagem Avançada', price: 79.99, category: 'Curso' },
         'preset-serum': { name: 'Serum Presets Collection', price: 19.99, category: 'Presets' }
-        // Os produtos da descrição original foram mapeados para os IDs do HTML
-        // Se houver mais produtos, adicione-os aqui
     };
 
     const product = products[productId];
@@ -197,11 +194,6 @@ function addToCart(productId) {
         cart.push(product);
         showToast(`${product.name} adicionado ao carrinho!`);
         console.log('Cart:', cart);
-        
-        // In a real application, you would:
-        // 1. Update cart UI/counter
-        // 2. Store cart in localStorage
-        // 3. Send to backend
     }
 }
 
@@ -232,7 +224,6 @@ function viewProduct(productId) {
             description: 'Pacote de 50 presets de baixo e synth para o Serum. Sons modernos e prontos para a produção de eletrónica.',
             features: ['50 Presets para Serum V1.35+', 'Focado em Bass e Leads', 'Sons prontos para House e Techno', 'Instruções de Instalação']
         }
-        // Se houver mais produtos, adicione os detalhes aqui
     };
 
     const details = productDetails[productId];
