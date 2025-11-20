@@ -19,8 +19,7 @@
                 
                 <a href="#about">Sobre o DJ</a>
                 <a href="#services">Booking</a>
-               
-                <button class="btn-contact" onclick="scrollToSection('contact')">Contactos</button>
+                <a href="#shop">Loja</a> <button class="btn-contact" onclick="scrollToSection('contact')">Contactos</button>
             </div>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <span></span>
@@ -32,8 +31,7 @@
             
             <a href="#about" onclick="closeMobileMenu()">Sobre o DJ</a>
             <a href="#services" onclick="closeMobileMenu()">Booking</a>
-            
-            <button class="btn-contact" onclick="scrollToSection('contact'); closeMobileMenu()">Contactos</button>
+            <a href="#shop" onclick="closeMobileMenu()">Loja</a> <button class="btn-contact" onclick="scrollToSection('contact'); closeMobileMenu()">Contactos</button>
         </div>
     </nav>
 
@@ -56,28 +54,22 @@
                 <div class="gallery-grid">
                     <div class="gallery-item tall">
                         <img src="/src/assets/gallery-1.jpg" alt="DJ a tocar num festival" loading="lazy">
-                        <div class="overlay"></div>
-                    </div>
+                        <div class="overlay">Clique para ver mais</div> </div>
                     <div class="gallery-item wide">
                         <img src="/src/assets/gallery-2.jpg" alt="Vista do DJ booth num clube" loading="lazy">
-                        <div class="overlay"></div>
-                    </div>
+                        <div class="overlay">Clube Noite Estrelada</div> </div>
                     <div class="gallery-item">
                         <img src="/src/assets/gallery-3.jpg" alt="Pista de dança cheia" loading="lazy">
-                        <div class="overlay"></div>
-                    </div>
+                        <div class="overlay">Multidão em êxtase</div> </div>
                     <div class="gallery-item tall">
                         <img src="/src/assets/gallery-4.jpg" alt="Estúdio de produção musical" loading="lazy">
-                        <div class="overlay"></div>
-                    </div>
+                        <div class="overlay">Produção em estúdio</div> </div>
                     <div class="gallery-item wide">
                         <img src="/src/assets/gallery-5.jpg" alt="DJ a interagir com o público" loading="lazy">
-                        <div class="overlay"></div>
-                    </div>
+                        <div class="overlay">Interação no palco</div> </div>
                     <div class="gallery-item">
                         <img src="/src/assets/gallery-6.jpg" alt="Detalhe do equipamento de DJ" loading="lazy">
-                        <div class="overlay"></div>
-                    </div>
+                        <div class="overlay">Deck Profissional</div> </div>
                 </div>
             </div>
         </section>
@@ -142,7 +134,94 @@
             </div>
         </section>
 
-        
+        <section id="shop" class="shop bg-gray-100">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Loja & Downloads</h2>
+                    <p>Sample Packs, Edits e Masterclasses para aprimorar o seu som</p>
+                </div>
+                <div class="shop-grid">
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/400/250?random=1" alt="Vintage House Edits Cover">
+                            <div class="product-overlay">
+                                <button class="btn-view" onclick="viewProduct('edit-vintage')">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="font-semibold text-lg">Vintage House Edits</h3>
+                            <p class="text-sm text-gray-500">DJ Edits</p>
+                            <div class="product-footer">
+                                <span class="product-price">€29,99</span>
+                                <button class="btn-add-cart" onclick="addToCart('edit-vintage')">
+                                    <i class="fas fa-shopping-cart"></i> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/400/250?random=2" alt="Deep Tech Sample Pack Cover">
+                            <div class="product-overlay">
+                                <button class="btn-view" onclick="viewProduct('sample-moody')">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="font-semibold text-lg">Deep Tech Sample Pack</h3>
+                            <p class="text-sm text-gray-500">Produção Musical</p>
+                            <div class="product-footer">
+                                <span class="product-price">€34,99</span>
+                                <button class="btn-add-cart" onclick="addToCart('sample-moody')">
+                                    <i class="fas fa-shopping-cart"></i> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/400/250?random=3" alt="Masterclass Cover">
+                            <div class="product-overlay">
+                                <button class="btn-view" onclick="viewProduct('course-masterclass')">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="font-semibold text-lg">Masterclass: Mixagem</h3>
+                            <p class="text-sm text-gray-500">Curso Online</p>
+                            <div class="product-footer">
+                                <span class="product-price">€79,99</span>
+                                <button class="btn-add-cart" onclick="addToCart('course-masterclass')">
+                                    <i class="fas fa-shopping-cart"></i> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/400/250?random=4" alt="Serum Presets Cover">
+                            <div class="product-overlay">
+                                <button class="btn-view" onclick="viewProduct('preset-serum')">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="font-semibold text-lg">Serum Presets Collection</h3>
+                            <p class="text-sm text-gray-500">Synth Presets</p>
+                            <div class="product-footer">
+                                <span class="product-price">€19,99</span>
+                                <button class="btn-add-cart" onclick="addToCart('preset-serum')">
+                                    <i class="fas fa-shopping-cart"></i> Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
 
         <section id="contact" class="contact">
             <div class="container">
@@ -203,4 +282,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
