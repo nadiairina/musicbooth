@@ -91,7 +91,7 @@ contactForm.addEventListener('submit', function(e) {
     // Se a validação passar:
     
     // Show success toast
-    showToast('Mensagem enviada! Entrarei em contacto em breve.', true);
+    showToast('Mensagem enviada! Entrarei em contato em breve.', true);
     
     // Reset form
     contactForm.reset();
