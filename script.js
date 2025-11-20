@@ -60,7 +60,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Contact form submission (Melhoria: Adicionado validação)
+// Contact form submission (Adicionado validação)
 const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', function(e) {
@@ -74,7 +74,7 @@ contactForm.addEventListener('submit', function(e) {
     const details = formData.get('message').trim();
     
     // *******************************************************************
-    // NOVO: Validação
+    // Validação
     // *******************************************************************
     if (!name || !email || !eventType || !details) {
         showToast('Erro: Por favor, preencha todos os campos obrigatórios.', false);
@@ -102,7 +102,7 @@ contactForm.addEventListener('submit', function(e) {
     // Sugestão: Usar a Fetch API para enviar dados para um endpoint real
 });
 
-// Toast notification function (Melhoria: Adicionado status de sucesso/erro)
+// Toast notification function (Adicionado status de sucesso/erro)
 function showToast(message, isSuccess = true) {
     // Remove existing toast if any
     const existingToast = document.querySelector('.toast');
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
         hero.style.transform = 'translateY(0)';
     }
 
-    // NOVO: Atualiza o ano no footer dinamicamente
+    // Atualiza o ano no footer dinamicamente
     const currentYear = document.getElementById('currentYear');
     if (currentYear) {
         currentYear.textContent = new Date().getFullYear();
@@ -265,7 +265,6 @@ function viewProduct(productId) {
     if (details) {
         let featuresHTML = details.features.map(f => `<li style="margin-bottom: 0.5rem;">✓ ${f}</li>`).join('');
         
-        // Mantive o HTML complexo aqui, mas removi a repetição de showToast no final
         showToast(`
             <div style="text-align: left; max-width: 400px;">
                 <h3 style="margin-bottom: 0.5rem; color: var(--color-light-text); font-size: 1.25rem;">${details.name}</h3>
