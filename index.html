@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Booth - DJ Profissional & Produção Musical</title>
-    <meta name="description" content="DJ e Produtor musical especializado em eventos, residências de clube e criação de música eletrónica.">
+    <title>Music Booth - DJ Profissional</title>
+    <meta name="description" content="DJ especializado em eventos, residências de clube e criação de música eletrónica.">
     
     <script src="https://cdn.tailwindcss.com"></script> 
     
@@ -16,10 +16,10 @@
         <div class="container">
             <h1 class="logo">Music Booth</h1>
             <div class="nav-links">
-                <a href="#portfolio">Gigs</a>
+                
                 <a href="#about">Sobre o DJ</a>
                 <a href="#services">Booking</a>
-                <a href="#shop">Loja</a>
+               
                 <button class="btn-contact" onclick="scrollToSection('contact')">Contactos</button>
             </div>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -29,10 +29,10 @@
             </button>
         </div>
         <div class="mobile-menu" id="mobileMenu">
-            <a href="#portfolio" onclick="closeMobileMenu()">Gigs</a>
-            <a href="#about" onclick="closeMobileMenu()">Sobre</a>
+            
+            <a href="#about" onclick="closeMobileMenu()">Sobre o DJ</a>
             <a href="#services" onclick="closeMobileMenu()">Booking</a>
-            <a href="#shop" onclick="closeMobileMenu()">Loja</a>
+            
             <button class="btn-contact" onclick="scrollToSection('contact'); closeMobileMenu()">Contactos</button>
         </div>
     </nav>
@@ -42,15 +42,15 @@
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>A Sua Festa Começa Aqui.<br><span class="accent">Sinta a Batida.</span></h1>
-                <p>DJ e Produtor com residências nos melhores clubes. Música de alta energia para transformar o seu evento.</p>
-                <button class="btn-primary" onclick="scrollToSection('contact')">Pedir Orçamento (Booking)</button>
+                <p>Música de alta energia para transformar o seu evento.</p>
+                <button class="btn-primary" onclick="scrollToSection('contact')">Pedir Orçamento</button>
             </div>
         </section>
 
         <section id="portfolio" class="portfolio bg-gray-900 text-white">
             <div class="container">
                 <div class="section-header text-white">
-                    <h2>Gigs & Residências</h2>
+                    <h2 class="text-white">Gigs & Residências</h2>
                     <p class="text-gray-400">Momentos de alta energia e os meus locais de atuação mais recentes</p>
                 </div>
                 <div class="gallery-grid">
@@ -86,7 +86,7 @@
             <div class="container">
                 <div class="about-grid">
                     <div class="about-content">
-                        <h2>Music Booth DJ</h2>
+                        <h2>Music Booth</h2>
                         <p>Com mais de 10 anos a dominar as pistas de dança, dedico-me a criar experiências sonoras únicas, misturando géneros e mantendo a energia sempre alta.</p>
                         <p>Especializado em House, Techno e sons de fusão, o meu objetivo é ir além do convencional, usando a técnica e a paixão para conectar o público a cada batida.</p>
                         <div class="stats">
@@ -142,102 +142,22 @@
             </div>
         </section>
 
-        <section id="shop" class="shop">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Loja Digital (Para Produtores)</h2>
-                    <p>Packs de som, Edits e Recursos exclusivos para elevar as suas produções</p>
-                </div>
-                <div class="shop-grid">
-                    <div class="product-card" data-product="edit-vintage">
-                        <div class="product-image">
-                            <img src="/src/assets/gallery-1.jpg" alt="Vintage Edit Pack" loading="lazy">
-                            <div class="product-overlay">
-                                <button class="btn-view" onclick="viewProduct('edit-vintage')">Ver Detalhes</button>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <span class="product-category">Edits</span>
-                            <h3>Vintage House Edits</h3>
-                            <p>Pack com 15 remixes exclusivos, prontos para a pista.</p>
-                            <div class="product-footer">
-                                <span class="product-price">€29,99</span>
-                                <button class="btn-add-cart" onclick="addToCart('edit-vintage')">Adicionar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-product="sample-moody">
-                        <div class="product-image">
-                            <img src="/src/assets/gallery-2.jpg" alt="Moody Samples Pack" loading="lazy">
-                            <div class="product-overlay">
-                                <button class="btn-view" onclick="viewProduct('sample-moody')">Ver Detalhes</button>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <span class="product-category">Samples</span>
-                            <h3>Deep Tech Sample Pack</h3>
-                            <p>Pack com 200 samples e loops para produções Deep Tech.</p>
-                            <div class="product-footer">
-                                <span class="product-price">€34,99</span>
-                                <button class="btn-add-cart" onclick="addToCart('sample-moody')">Adicionar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-product="course-masterclass">
-                        <div class="product-image">
-                            <img src="/src/assets/gallery-3.jpg" alt="DJ Masterclass Course" loading="lazy">
-                            <div class="product-overlay">
-                                <button class="btn-view" onclick="viewProduct('course-masterclass')">Ver Detalhes</button>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <span class="product-category">Curso</span>
-                            <h3>Masterclass: Mixagem Avançada</h3>
-                            <p>Curso completo de produção e DJing profissional, passo a passo.</p>
-                            <div class="product-footer">
-                                <span class="product-price">€79,99</span>
-                                <button class="btn-add-cart" onclick="addToCart('course-masterclass')">Adicionar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-product="preset-serum">
-                        <div class="product-image">
-                            <img src="/src/assets/gallery-4.jpg" alt="Serum Presets Pack" loading="lazy">
-                            <div class="product-overlay">
-                                <button class="btn-view" onclick="viewProduct('preset-serum')">Ver Detalhes</button>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <span class="product-category">Presets</span>
-                            <h3>Serum Presets Collection</h3>
-                            <p>Pacote de 50 presets de baixo e synth para o Serum.</p>
-                            <div class="product-footer">
-                                <span class="product-price">€19,99</span>
-                                <button class="btn-add-cart" onclick="addToCart('preset-serum')">Adicionar</button>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-            </div>
-        </section>
+        
 
         <section id="contact" class="contact">
             <div class="container">
                 <div class="section-header">
-                    <h2>Contacte para Booking</h2>
+                    <h2>Contactos</h2>
                     <p>Vamos discutir a sua próxima festa ou evento?</p>
                 </div>
                 <div class="contact-grid">
                     <div class="contact-info">
-                        <h3>Informações de Contacto</h3>
+                        
                         <div class="info-item">
                             <div class="info-icon">✉️</div>
                             <div>
-                                <div class="info-title">Email (Booking)</div>
-                                <div class="info-text">booking@djmusicbooth.com</div>
+                                <div class="info-title">Email</div>
+                                <div class="info-text">booking@musicbooth.com</div>
                             </div>
                         </div>
                         <div class="info-item">
@@ -250,8 +170,8 @@
                         <div class="info-item">
                             <div class="info-icon">📍</div>
                             <div>
-                                <div class="info-title">Base de Atuação</div>
-                                <div class="info-text">Portugal (Disponível Globalmente)</div>
+                                <div class="info-title">Localilização</div>
+                                <div class="info-text">Portugal</div>
                             </div>
                         </div>
                     </div>
@@ -260,7 +180,7 @@
                         <input type="email" name="email" placeholder="Email para Resposta" required>
                         <input type="text" name="event-type" placeholder="Tipo de Evento (Clube, Casamento, Corporativo)" required>
                         <textarea name="message" placeholder="Data Proposta e Detalhes do Evento" rows="6" required></textarea>
-                        <button type="submit" class="btn-primary">Pedir Cotação</button>
+                        <button type="submit" class="btn-primary">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -273,7 +193,7 @@
             <p class="mt-1">Website desenvolvido por 
                 <a href="https://nadiairina.github.io/Nadia-Portfolio/" 
                     target="_blank" 
-                    class="text-gray-500 hover:text-gray-900 hover:underline transition duration-200">
+                    class="text-gray-500 hover:text-gray-900 transition duration-200 underline">
                     Nadia Irina
                 </a>
             </p>
@@ -283,3 +203,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
