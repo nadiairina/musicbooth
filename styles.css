@@ -224,11 +224,25 @@ section {
 
 /* About Section */
 .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    /* REGRAS PARA CENTRAR A SECÇÃO 'SOBRE NÓS' */
+    grid-template-columns: 1fr; /* Define uma única coluna */
+    max-width: 800px; /* Limita a largura do conteúdo para melhor leitura */
+    margin: 0 auto; /* ESSENCIAL: Centraliza o bloco 'about-grid' na página */
+    gap: 0; 
     align-items: center;
 }
+/* Estilos para o Conteúdo (Texto) */
+.about-content {
+    text-align: center; /* ESSENCIAL: Centraliza o texto e os títulos */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza itens de bloco como a caixa de estatísticas */
+}
+/* Esconde a div da imagem (para forçar 1 coluna centrada) */
+.about-image {
+    display: none; 
+}
+
 
 /* NOVO: Estilo para o Título H2 da secção Sobre */
 .about-content h2 {
@@ -250,6 +264,8 @@ section {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    width: 100%; /* Adicionado para garantir que o flex ocupe o espaço */
+    max-width: 600px; /* Adicionado para limitar a largura em centrado */
 }
 .stat-item {
     text-align: center;
