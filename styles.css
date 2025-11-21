@@ -73,8 +73,8 @@ a {
 }
 
 .navbar-logo-circle .logo-img {
-    width: 95%; /* CORREÇÃO APLICADA AQUI */
-    height: 95%; /* CORREÇÃO APLICADA AQUI */
+    width: 100%; /* CORREÇÃO APLICADA AQUI */
+    height: 100%; /* CORREÇÃO APLICADA AQUI */
     object-fit: contain;
 }
 /* FIM NOVO ESTILO NAVBAR LOGO */
