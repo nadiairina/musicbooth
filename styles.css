@@ -302,6 +302,17 @@ section {
     border: 1px solid transparent; /* ADIÇÃO */
     transition: all 0.3s ease; /* ADIÇÃO */
 }
+
+/* NOVO: Estilo para o Título do Serviço (Atualizado: Tamanho maior e cor Ciano) */
+.service-card h2 {
+    font-size: 1.6rem; /* Aumenta o tamanho do título do serviço */
+    font-weight: 700; /* Aumenta a espessura para destaque */
+    color: var(--color-primary); /* Aplica a cor ciano */
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.2); /* Efeito neon sutil */
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
 /* NOVO: Efeito de Hover nos Serviços */
 .service-card:hover {
     box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2);
@@ -472,6 +483,14 @@ footer {
     border-top: 1px solid #E5E7EB;
 }
 
+/* NOVO: Estilos para o Título das Redes Sociais */
+.social-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-dark-bg);
+    margin-bottom: 15px; 
+}
+
 /* NOVO: Estilos para Redes Sociais */
 .social-links {
     display: flex;
@@ -494,7 +513,6 @@ footer {
     text-shadow: 0 0 8px var(--color-primary);
 }
 /* Fim dos Estilos para Redes Sociais */
-
 
 /* Media Queries (Gerais) */
 @media (max-width: 992px) {
@@ -519,6 +537,11 @@ footer {
     /* NOVO: Reduz o tamanho do texto da secção "Sobre" em mobile */
     .about-content .about-text {
         font-size: 1rem;
+    }
+    /* NOVO: Ajuste do Título do Serviço em Mobile */
+    .service-card h2 {
+        font-size: 1.2rem;
+        /* A cor será herdada do estilo geral, mas mantemos o tamanho menor para mobile */
     }
 }
 
