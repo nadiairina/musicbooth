@@ -5,8 +5,8 @@
 
 :root {
     /* Cores */
-    --color-primary: #00FFFF; /* Ciano ElÃ©trico (Destaque) */
-    --color-secondary: #FF00FF; /* Magenta (Destaque SecundÃ¡rio/Hover) */
+    --color-primary: #00FFFF; /* Ciano Elétrico (Destaque) */
+    --color-secondary: #FF00FF; /* Magenta (Destaque Secundário/Hover) */
     --color-dark-bg: #111827; /* Fundo Escuro (Quase Preto) */
     --color-light-text: #F3F4F6; /* Texto Claro */
     --color-gray-text: #9CA3AF; /* Texto Cinzento */
@@ -149,7 +149,7 @@ a {
 }
 
 /* ========================================================================
- * 3. Layout de SecÃ§Ãµes
+ * 3. Layout de Secções
  * ======================================================================== */
 section {
     padding: 80px 0;
@@ -226,7 +226,7 @@ section {
 .gallery-item.tall { grid-row: span 2; }
 .gallery-item.wide { grid-column: span 2; }
 
-/* ADIÃ‡ÃƒO: Overlay de InteraÃ§Ã£o na Galeria */
+/* ADIÇÃO: Overlay de Interação na Galeria */
 .gallery-item .overlay {
     position: absolute;
     top: 0;
@@ -234,7 +234,7 @@ section {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    opacity: 0; /* ComeÃ§a invisÃ­vel */
+    opacity: 0; /* Começa invisível */
     transition: opacity 0.3s ease;
     display: flex;
     align-items: center;
@@ -245,46 +245,46 @@ section {
 }
 
 .gallery-item:hover .overlay {
-    opacity: 1; /* Torna-se visÃ­vel no hover */
+    opacity: 1; /* Torna-se visível no hover */
 }
-/* Fim da alteraÃ§Ã£o no Portfolio */
+/* Fim da alteração no Portfolio */
 
 
 /* About Section */
 .about-grid {
-    /* REGRAS PARA CENTRAR A SECÃ‡ÃƒO 'SOBRE NÃ“S' */
-    grid-template-columns: 1fr; /* Define uma Ãºnica coluna */
-    max-width: 800px; /* Limita a largura do conteÃºdo para melhor leitura */
-    margin: 0 auto; /* ESSENCIAL: Centraliza o bloco 'about-grid' na pÃ¡gina */
+    /* REGRAS PARA CENTRAR A SECÇÃO 'SOBRE NÓS' */
+    grid-template-columns: 1fr; /* Define uma única coluna */
+    max-width: 800px; /* Limita a largura do conteúdo para melhor leitura */
+    margin: 0 auto; /* ESSENCIAL: Centraliza o bloco 'about-grid' na página */
     gap: 0; 
     align-items: center;
 }
-/* Estilos para o ConteÃºdo (Texto) */
+/* Estilos para o Conteúdo (Texto) */
 .about-content {
-    text-align: center; /* ESSENCIAL: Centraliza o texto e os tÃ­tulos */
+    text-align: center; /* ESSENCIAL: Centraliza o texto e os títulos */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza itens de bloco como a caixa de estatÃ­sticas */
+    align-items: center; /* Centraliza itens de bloco como a caixa de estatísticas */
 }
-/* Esconde a div da imagem (para forÃ§ar 1 coluna centrada) */
+/* Esconde a div da imagem (para forçar 1 coluna centrada) */
 .about-image {
     display: none; 
 }
 
 
-/* NOVO: Estilo para o TÃ­tulo H2 da secÃ§Ã£o Sobre */
+/* NOVO: Estilo para o Título H2 da secção Sobre */
 .about-content h2 {
-    font-size: 2.2rem; /* Tamanho maior para o tÃ­tulo */
+    font-size: 2.2rem; /* Tamanho maior para o título */
     font-weight: 700;
-    margin-bottom: 20px; /* EspaÃ§amento abaixo do tÃ­tulo */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
     color: var(--color-dark-bg);
 }
 
-/* NOVO: Estilo para o texto do parÃ¡grafo da secÃ§Ã£o Sobre (aumenta o tamanho) */
+/* NOVO: Estilo para o texto do parágrafo da secção Sobre (aumenta o tamanho) */
 .about-content .about-text {
     font-size: 1.1rem; /* Aumenta o tamanho do texto */
     line-height: 1.8; /* Melhora a legibilidade */
-    margin-bottom: 30px; /* EspaÃ§amento abaixo do parÃ¡grafo */
+    margin-bottom: 30px; /* Espaçamento abaixo do parágrafo */
     color: #333; /* Uma cor um pouco mais escura para o texto */
 }
 
@@ -292,16 +292,16 @@ section {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    width: 100%; /* Adicionado para garantir que o flex ocupe o espaÃ§o */
+    width: 100%; /* Adicionado para garantir que o flex ocupe o espaço */
     max-width: 600px; /* Adicionado para limitar a largura em centrado */
 }
 .stat-item {
     text-align: center;
     padding: 15px;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* ADIÃ‡ÃƒO */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* ADIÇÃO */
 }
-/* NOVO: Efeito de Hover nas EstatÃ­sticas */
+/* NOVO: Efeito de Hover nas Estatísticas */
 .stat-item:hover {
     background-color: #F3F4F6;
     transform: translateY(-3px);
@@ -327,13 +327,13 @@ section {
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid transparent; /* ADIÃ‡ÃƒO */
-    transition: all 0.3s ease; /* ADIÃ‡ÃƒO */
+    border: 1px solid transparent; /* ADIÇÃO */
+    transition: all 0.3s ease; /* ADIÇÃO */
 }
 
-/* NOVO: Estilo para o TÃ­tulo do ServiÃ§o (Atualizado: Tamanho maior e cor Ciano) */
-.service-card h2 {
-    font-size: 1.6rem; /* Aumenta o tamanho do tÃ­tulo do serviÃ§o */
+/* NOVO: Estilo para o Título do Serviço (CORRIGIDO: Usa h4 para títulos maiores e ciano) */
+.service-card h4 { /* Alterado de h2 para h4 para corresponder ao HTML */
+    font-size: 1.6rem; /* Aumenta o tamanho do título do serviço */
     font-weight: 700; /* Aumenta a espessura para destaque */
     color: var(--color-primary); /* Aplica a cor ciano */
     text-shadow: 0 0 5px rgba(0, 255, 255, 0.2); /* Efeito neon sutil */
@@ -341,14 +341,14 @@ section {
     margin-bottom: 10px; 
 }
 
-/* NOVO: Efeito de Hover nos ServiÃ§os */
+/* NOVO: Efeito de Hover nos Serviços */
 .service-card:hover {
     box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2);
     transform: translateY(-5px);
     border-color: var(--color-primary);
 }
 
-/* Estilo para Ã­cones de ServiÃ§o */
+/* Estilo para ícones de Serviço */
 .service-icon {
     font-size: 2.0rem;
     margin-bottom: 15px;
@@ -464,11 +464,11 @@ section {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    padding: 10px; /* ADIÃ‡ÃƒO */
+    padding: 10px; /* ADIÇÃO */
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* ADIÃ‡ÃƒO */
+    transition: background-color 0.3s ease; /* ADIÇÃO */
 }
-/* NOVO: Efeito de Hover nas InformaÃ§Ãµes de Contacto */
+/* NOVO: Efeito de Hover nas Informações de Contacto */
 .info-item:hover {
     background-color: #F8F8F8;
 }
@@ -477,9 +477,9 @@ section {
     font-size: 1.5rem;
     color: var(--color-primary);
     margin-right: 15px;
-    transition: transform 0.3s ease; /* ADIÃ‡ÃƒO */
+    transition: transform 0.3s ease; /* ADIÇÃO */
 }
-/* NOVO: Efeito de Hover no Ãcone */
+/* NOVO: Efeito de Hover no Ícone */
 .info-item:hover .info-icon {
     transform: translateX(5px);
 }
@@ -516,7 +516,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 25px; /* EspaÃ§o entre links sociais e copyright */
+    margin-bottom: 25px; /* Espaço entre links sociais e copyright */
     padding-top: 10px;
 }
 
@@ -551,18 +551,18 @@ footer {
     .hero-content h1 {
         font-size: 2.5rem;
     }
-    /* NOVO: Reduz o tamanho do tÃ­tulo "Sobre NÃ³s" em mobile */
+    /* NOVO: Reduz o tamanho do título "Sobre Nós" em mobile */
     .about-content h2 {
         font-size: 1.8rem;
     }
-    /* NOVO: Reduz o tamanho do texto da secÃ§Ã£o "Sobre" em mobile */
+    /* NOVO: Reduz o tamanho do texto da secção "Sobre" em mobile */
     .about-content .about-text {
         font-size: 1rem;
     }
-    /* NOVO: Ajuste do TÃ­tulo do ServiÃ§o em Mobile */
-    .service-card h2 {
+    /* NOVO: Ajuste do Título do Serviço em Mobile */
+    .service-card h4 { /* Alterado de h2 para h4 */
         font-size: 1.2rem;
-        /* A cor serÃ¡ herdada do estilo geral, mas mantemos o tamanho menor para mobile */
+        /* A cor será herdada do estilo geral, mas mantemos o tamanho menor para mobile */
     }
 }
 
@@ -602,9 +602,9 @@ footer {
 }
 
 /* ========================================================================
- * 5. Estilos EspecÃ­ficos do Menu MÃ³vel (CORRIGIDO)
+ * 5. Estilos Específicos do Menu Móvel (CORRIGIDO)
  * ======================================================================== */
-/* Esconder o botÃ£o de menu mÃ³vel em desktops */
+/* Esconder o botão de menu móvel em desktops */
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -614,7 +614,7 @@ footer {
     z-index: 1001;
 }
 
-/* Esconder o menu mÃ³vel por predefiniÃ§Ã£o */
+/* Esconder o menu móvel por predefinição */
 .mobile-menu {
     display: none;
     position: absolute;
@@ -658,11 +658,11 @@ footer {
         display: none; /* Esconde links de desktop */
     }
     .mobile-menu-btn {
-        display: block; /* Mostra o botÃ£o hambÃºrguer */
+        display: block; /* Mostra o botão hambúrguer */
     }
 }
 
-/* Estilos para o Ã­cone do botÃ£o mÃ³vel */
+/* Estilos para o ícone do botão móvel */
 .mobile-menu-btn span {
     display: block;
     width: 25px;
